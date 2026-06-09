@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFE 48 | Beyond Premium</title> 
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header class="header">
+        <a href="#" class="logo"> 
+            <img src="logo.1.png" alt="Logo">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#testimonials">Testimonials</a> 
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div> 
+
+        <!-- Search Form Toggle -->
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Search here...">
+            <label for="search-box" class="fas fa-search"></label>  
+        </div>
+
+        <!-- Dynamic Shopping Cart Sidebar -->
+        <div class="cart-items-container">
+            <div class="cart-items-wrapper">
+                <!-- JavaScript will dynamically inject cart items here -->
+            </div>
+            <div class="cart-total-container">
+                <div class="total-price-box">Total: <span class="cart-total-price">Rs.0/-</span></div>
+                <button class="btn checkout-btn">Checkout Now</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>fresh coffee in the morning</h3>
+            <p>Start your day with our specially crafted artisan blends, roasted locally and brewed to perfection.</p>
+            <a href="#menu" class="btn">get yours now</a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <h1 class="heading"> <span>about</span> us </h1>
+        <div class="row">
+            <!-- Multi-Image Gallery Showcase -->
+            <div class="image-gallery">
+                <img src="images/image (2).jpg" alt="Our Cozy Coffee Setup" class="about-img">
+                <img src="images/image (1).jpg" alt="Artisan Latte Art" class="about-img">
+            </div>
+            <div class="content">
+                <h3>what makes our coffee special?</h3>
+                <p>At Cafe 48, we source premium single-origin Arabica beans directly from sustainable farms. Every single batch is precision-roasted in-house to unlock unique, complex flavor profiles before being expertly extracted by our team of passionate baristas.</p>
+                <p>Whether you need a quick, intense espresso kick to power through your day or a smooth, lingering cold brew to savor, we provide an unparalleled cozy space and coffee experience crafted just for you.</p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="menu" id="menu">
+        <h1 class="heading"> our <span>menu</span> </h1>
+
+        <div class="box-container">
+            <!-- Item 1 -->
+            <div class="box" data-id="1">
+                <img src="images/cart-item 1.jpg.jpg" alt="Espresso" class="product-img">
+                <h3 class="product-title">Classic Espresso</h3>
+                <div class="price">Rs.120/-</div>
+                <button class="btn add-to-cart-btn">add to cart</button>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="box" data-id="2">
+                <img src="images/cart-item 2.jpg.jpg" alt="Cappuccino" class="product-img">
+                <h3 class="product-title">Creamy Cappuccino</h3>
+                <div class="price">Rs.145/-</div>
+                <button class="btn add-to-cart-btn">add to cart</button>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="box" data-id="3">
+                <img src="images/cart-item 3.jpg.jpg" alt="Mocha" class="product-img">
+                <h3 class="product-title">Caramel Mocha</h3>
+                <div class="price">Rs.220/-</div>
+                <button class="btn add-to-cart-btn">add to cart</button>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="box" data-id="4">
+                <img src="images/cart-item 4 .jpg.jpg" alt="Cold Brew" class="product-img">
+                <h3 class="product-title">Signature Cold Brew</h3>
+                <div class="price">Rs.420/-</div>
+                <button class="btn add-to-cart-btn">add to cart</button>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="box" data-id="5">
+                <img src="images/cart-item 5.jpg.jpg"alt="Vanilla Latte" class="product-img">
+                <h3 class="product-title">French Vanilla Latte</h3>
+                <div class="price">Rs.180/-</div>
+                <button class="btn add-to-cart-btn">add to cart</button>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="box" data-id="6">
+                <img src="images/cart-item 6.jpg.jpg" alt="Americano" class="product-img">
+                <h3 class="product-title">Caffè Americano</h3>
+                <div class="price">Rs.130/-</div>
+                <button class="btn add-to-cart-btn">add to cart</button>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="box" data-id="7">
+                <img src="images/cart-item 7.jpg.jpg" alt="Hazelnut Macchiato" class="product-img">
+                <h3 class="product-title">Hazelnut Macchiato</h3>
+                <div class="price">Rs.240/-</div>
+                <button class="btn add-to-cart-btn">add to cart</button>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="box" data-id="8">
+                <img src="images/cart-item.8.jpg.jpg" alt="Irish Coffee" class="product-img">
+                <h3 class="product-title">Irish Cream Brew</h3>
+                <div class="price">Rs.260/-</div>
+                <button class="btn add-to-cart-btn">add to cart</button>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="box" data-id="9">
+                <img src="images/cart-item9.jpg.jpg" alt="Affogato" class="product-img">
+                <h3 class="product-title">Gelato Affogato</h3>
+                <div class="price">Rs.195/-</div>
+                <button class="btn add-to-cart-btn">add to cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials" id="testimonials">
+        <h1 class="heading"> customer's <span>testimonials</span> </h1>
+        
+        <div class="box-container">
+            <div class="box">
+                <img src="images/testimonial.2.jpg" alt="Quote" class="quote">
+                <p>The Signature Cold Brew here is absolute magic. Smooth flavor notes, absolutely zero bitter aftertaste, and the atmosphere makes it the ultimate remote workspace.</p>
+             
+                <h3>Aravind Sharma</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/testimonial.3.jpg" alt="Quote" class="quote">
+                <p>Phenomenal customer service! The Hazelnut Macchiato is consistently perfect every single morning. Cafe 48 has officially ruined all other coffee shops for me.</p>
+              
+                <h3>Sneha Reddy</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/testimonial.1.jpg" alt="Quote" class="quote">
+                <p>An amazing asset to our local neighborhood. Their attention to detail on extraction metrics and direct-trade sourcing shines through clearly in every classic Espresso cup.</p>
+    
+                <h3>Rohan Malhotra</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <h1 class="heading"> <span>contact</span> us </h1>
+        <div class="row">
+            <form action="">
+                <h3>get in touch</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="name">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="number" placeholder="number">
+                </div>
+                <input type="submit" value="contact now" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <!-- JS File Link -->
+    <script src="script.js"></script>
+</body>
+</html>
